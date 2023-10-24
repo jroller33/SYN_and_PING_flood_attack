@@ -31,7 +31,7 @@ Unlike most of my network attacks, this script does NOT require any additional h
 
 **Installation:**
 
-***Note:*** to run this script you'll need a libpcap provider, which allows you to capture, manipulate, and send raw packets. On Windows 11 you can use the free version of [NPCAP](https://npcap.com/#download). Install this before following these steps:
+***Note:*** to run this script you'll need a libpcap provider, which allows you to capture, manipulate, and send raw packets. On Windows 11 you can use the free version of [NPCAP](https://npcap.com/#download). Install a libpcap provider first, then follow these steps:
 
 - First clone the repo:
 ```

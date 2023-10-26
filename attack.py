@@ -3,10 +3,10 @@
 
 # make sure you've installed 'scapy' in your venv before running. This script may take a while before it crashes the target. Let it keep running
 
-
-from scapy.all import IP, TCP       # IP and TCP weren't importing correctly, so I did it like this
-from scapy.all import *
-
+from scapy.layers.inet import IP, TCP, ICMP
+from scapy.packet import Raw
+from scapy.sendrecv import send
+from scapy.volatile import RandShort
 
 # I'm using my local router for testing
 target_ip = "192.168.4.1"

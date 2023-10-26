@@ -3,12 +3,6 @@ from scapy.packet import Raw
 from scapy.sendrecv import send
 from scapy.volatile import RandShort
 
-from scapy.layers.inet import IP, TCP, ICMP
-from scapy.packet import Raw
-from scapy.sendrecv import send
-from scapy.volatile import RandShort
-
-
 def send_syn(target_ip_address: str, target_port: int, number_of_packets_to_send: int = 4, size_of_packet: int = 65000):
     ip = IP(dst=target_ip_address)
     tcp = TCP(sport=RandShort(), dport=target_port, flags="S")
